@@ -1,0 +1,38 @@
+.container {
+  height: 100vh;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 55px;
+}
+.card-container {
+  background-image: linear-gradient(#ff6e7f, #bfe9ff);
+  height: 95%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+h1 {
+  font-size: 45px;
+  color: #0f172a;
+}
+.count {
+  font-size: 28px;
+  color: #334155;
+}
+button {
+  height: 30px;
+  width: 135px;
+  border-radius: 10px;
+  border: none;
+}
+.paragraph {
+  color: #1e293b;
+  font-weight: 500;
+  font-size: 16px;
+}
+button {
+  color: #334155;
+}
