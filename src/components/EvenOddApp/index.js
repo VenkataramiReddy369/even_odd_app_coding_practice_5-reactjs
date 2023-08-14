@@ -3,27 +3,23 @@ import {Component} from 'react'
 import './index.css'
 
 class EvenOddApp extends Component {
-  state = {value: 0}
+  state = {count: 0}
 
   onIncrement = () => {
-    this.setState(prevState => ({value: prevState.value + 1}))
+    const randomNum = Math.ceil(Math.random() * 100)
+    this.setState(prevState => ({count: prevState.count + randomNum}))
   }
 
   render() {
-    const {value} = this.state
+    const {count} = this.state
 
-    let result
-    if (value % 2 === 0) {
-      result = <p className="count">Count is Even</p>
-    } else {
-      result = <p className="count">Count is Odd</p>
-    }
+    const value = count % 2 === 0 ? 'Even' : 'Odd'
 
     return (
       <div className="container">
         <div className="card-container">
-          <h1>Count {value}</h1>
-          {result}
+          <h1>Count {count}</h1>
+          <p className="count">Count is {value}</p>
           <button type="button" onClick={this.onIncrement}>
             Increment
           </button>
